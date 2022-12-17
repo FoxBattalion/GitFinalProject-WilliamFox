@@ -30,9 +30,16 @@ img{
 #content2 {
     display: grid;
     grid-template-columns: 1fr;
+    border: solid thick black;
+    background-color: lightgreen;
+    align-items: center;
+    justify-content: center;
 }
 #resolutionSwitching>img{
-    width: 50px;
+    width: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 #content {
     display: grid;
@@ -54,7 +61,7 @@ img{
         grid-column: span 2;
     }
     #resolutionSwitching>img{
-        width: 200px
+        width: 400px
     }
 }
 @media screen and (min-width:1100px) {
