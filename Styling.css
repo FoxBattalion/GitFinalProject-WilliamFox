@@ -37,6 +37,7 @@ img{
     gap: 1.25rem;
     border: solid thick black;
     background-color: palegreen;
+    padding: 20px;
 }
 .card {
     border: solid thick black;
