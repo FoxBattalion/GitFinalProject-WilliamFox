@@ -31,6 +31,8 @@ img{
     display: grid;
     grid-template-columns: 1fr;
     gap: 1.25rem;
+    border: solid thick black;
+    background-color: palegreen;
 }
 .card {
     border: solid thick black;
@@ -46,12 +48,26 @@ img{
     #content > h2,#contact {
         grid-column: span 2;
     }
-    
+
+    #width100>img {
+        width: 100%;
+    }
+    #maxWidth>img{
+        width: 20rem;
+        max-width: 100%;
+    }
 }
 @media screen and (min-width:1100px) {
     h1,h2{
         text-align: left;
+        grid-column: span 4 !important;
     }   
+    #width100{
+        grid-column: span 2;
+    }
+    #maxWidth{
+        grid-column: span 2;
+    }
     #content {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     } 
