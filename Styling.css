@@ -30,6 +30,8 @@ img{
 .card {
     border: solid thick black;
     background-color: slategray;
+    align-items: center;
+    justify-content: center;
 }
 @media screen and (min-width:768px) {
     #content {
