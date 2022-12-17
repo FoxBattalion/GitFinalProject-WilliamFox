@@ -39,6 +39,11 @@ img{
     background-color: palegreen;
     padding: 20px;
 }
+#resolutionSwitching>img{
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+}
 .card {
     border: solid thick black;
     background-color: slategray;
@@ -61,6 +66,12 @@ img{
         width: 20rem;
         max-width: 100%;
     }
+    #resolutionSwitching{
+        grid-column: span 2;
+    }
+    #resolutionSwitching>img{
+        width: 400px;
+    }
 }
 @media screen and (min-width:1100px) {
     h1,h2{
@@ -79,7 +90,7 @@ img{
     h2{
         max-width: 80%;
     }
-    #contact,#artDirection{
+    #contact,#artDirection,#resolutionSwitching{
         grid-column: span 4;
     }
 }
