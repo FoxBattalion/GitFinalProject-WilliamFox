@@ -1,0 +1,64 @@
+
+body {
+    width: 85%;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: palevioletred;
+    height: max-content;
+    font-family: 'Times New Roman', Times, serif,monospace;
+}
+h1 {
+    color: navy;
+    font-weight: bold;
+    padding: 1rem;
+    text-align: center;
+}
+a {
+    color: black;
+}
+h2{
+    
+    padding: 1rem;
+    text-align: center;
+}
+img{
+    display: block;
+    width: 100%;
+    padding: 2rem;
+}
+#content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+}
+.card {
+    border: solid thick black;
+    background-color: slategray;
+    align-items: center;
+    justify-content: center;
+}
+@media screen and (min-width:768px) {
+    #content {
+        grid-template-columns: 1fr 1fr;
+        gap: 1fr;
+    }
+    #content > h2,#contact {
+        grid-column: span 2;
+    }
+    
+}
+@media screen and (min-width:1100px) {
+    h1,h2{
+        text-align: left;
+    }   
+    #content {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    } 
+    h2{
+        max-width: 80%;
+    }
+    #contact{
+        grid-column: span 4;
+    }
+}
